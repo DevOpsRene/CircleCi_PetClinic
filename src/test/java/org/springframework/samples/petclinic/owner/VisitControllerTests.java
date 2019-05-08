@@ -86,6 +86,7 @@ public class VisitControllerTests {
             .andExpect(model().attributeHasErrors("visit"))
             .andExpect(status().isOk())
             .andExpect(view().name("pets/createOrUpdateVisitForm"));
+        throw new Exception();
     }
 
 }
